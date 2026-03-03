@@ -20,6 +20,8 @@ def run_evaluation():
     system = SentimentAnalyzer()
 
     # 3. Настройка MLflow (Observability)
+    # Явно указываем писать логи в папку ./mlruns
+    mlflow.set_tracking_uri("file:./mlruns")
     mlflow.set_experiment("AI_System_Integration_Evals")
 
     with mlflow.start_run():
