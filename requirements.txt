@@ -1,0 +1,6 @@
+transformers
+torch
+mlflow
+pandas
+pytest
+scikit-learn
